@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Local weather App</title>
+    <meta name="author" content="Luka Mohar">
+    <meta name="description" content="A location based current weather app">
+    <meta name="keywords" content="local, weather, app, freecodecamp, project, javascript, API, bootstrap"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="common.css">
+    <script src="client.js" defer></script>
+  </head>
+  <body>
+    <div id="weather" class="pos-abs pos-center-xy text-center width-90">
+          <div id="image" class="image-sq circle pos-rel pos-center-x margin-bottom"></div>
+        <h1>
+        <span id="main"></span><span id="metrics">°C</span>
+        </h1>
+        <h3>
+        <span id="weather-data"></span> 
+        </h3>
+        <p><i class="fas fa-map-marker-alt text-info"></i> <span id="location"></span></p>
+        <button onclick="handleClick()" class="btn btn-outline-info btn-lg margin-top" id="toggle">Toggle °C/F</button>
+    </div>
+
+  </body>
+</html>

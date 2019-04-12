@@ -1,0 +1,88 @@
+.image-sq {
+    width: 80px;
+    height: 80px;
+    background-color: #17A2B8;
+  }
+  #weather-data {
+    text-transform: capitalize;
+  }
+  #weather {
+    max-width: 300px;
+  }
+  /*
+  *         COMMON
+  *         VARIABLES
+  *
+  *
+  */
+  
+  :root {
+      --margins: 1.7em;
+      --test-color: #000;
+  }
+  /*
+  *               DEFAULTS
+  */
+  * {
+      margin: 0;
+      padding:0;
+  }
+  /*
+  *               TEST ELEMENTS
+  */
+  .test { 
+      border: 5px solid var(--test-color); 
+  
+  }
+  /*
+  *               MARGINS
+  */
+  
+  .margin-top { margin: var(--margins) 0 0 0; }
+  .margin-bottom { margin:  0 0 var(--margins) 0; }
+  .margin-left { margin:  0 0 0 var(--margins); }
+  .margin-right{ margin:  0 var(--margins) 0 0; }
+  .margin-tb { margin: var(--margins) 0; }
+  .margin-lr { margin: 0 var(--margins); }
+  /*
+  *               POSITION
+  */
+  .pos-abs { position: absolute; }
+  .pos-fix { position: fixed; }
+  .pos-rel { position: relative; }
+  
+  .pos-center-x {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .pos-center-y {
+      top: 50%;
+      transform: translateY(-50%)
+  }
+  .pos-center-xy {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  /*
+  *               SHAPES
+  */
+  .circle {
+      border-radius: 50%;
+  }
+  /*
+  *               SIZING
+  */
+  .screen-width-full { width: 100 vw; }
+  .screen-height-full { height: 100vh ; }
+  .screen-wh-full {
+      width: 100vw;
+      height: 100vh;
+  }
+  .screen-fixed {
+      width: 100%;
+      height: 100%;
+  }
+  .width-90 { width: 90%; }
+  .width-100 { width: 100%; }
+  .width-50 { width: 50%; }
